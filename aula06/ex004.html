@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2em ;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nome = String(window.prompt("Qual é seu nome?"))
+        document.write(`<p>Olá, ${nome}! Seu nome tem ${nome.length} letras.</p>`)
+        document.write(`<p>Olá, ${nome.toUpperCase()}!</p>`)
+        document.write(`<p>Olá, ${nome.toLowerCase()}!</p>`)
+        var numero = 10.5
+        document.write(`<p> ${numero.toFixed(2)} </p>`)
+        document.write(`<p> ${numero.toFixed(1).replace('.', ',')} </p>`)
+        var salario = 1500.23
+        document.write(`<p> ${salario.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} </p>`)
+    </script>
+</body>
+</html>
